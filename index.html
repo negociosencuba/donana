@@ -1,1 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#C8102E" />
 
+  <!-- SEO -->
+  <title>Doña Ana · Comida criolla y sándwiches en Santiago de Cuba</title>
+  <meta name="description" content="Puesto de comida criolla, sándwiches, café y jugos naturales en Vista Alegre, Santiago de Cuba. Abierto 24 horas. Pide por WhatsApp o visítanos." />
+  <link rel="canonical" href="https://negociosencuba.github.io/donana/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Doña Ana · Comida criolla en Santiago de Cuba" />
+  <meta property="og:description" content="Sándwiches, comida criolla, café y jugos naturales. Abierto 24 horas en Vista Alegre." />
+  <meta property="og:image" content="https://https://negociosencuba.github.io/donana/assets/img/hero.webp" />
+  <meta property="og:url" content="https://https://negociosencuba.github.io/donana/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥪</text></svg>" />
+
+  <!-- Schema.org Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Doña Ana",
+    "image": "https://www.donana.com/assets/img/hero.webp",
+    "servesCuisine": ["Cubana", "Comida criolla", "Sándwiches", "Café", "Jugos naturales"],
+    "priceRange": "$",
+    "telephone": "+5358557125",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 23 % Carretera del Caney y Calle 4ta de Vista Alegre",
+      "addressLocality": "Santiago de Cuba",
+      "addressRegion": "Santiago de Cuba",
+      "addressCountry": "CU"
+    },
+    "url": "https://www.donana.com/",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }]
+  }
+  </script>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Doña Ana - inicio">
+        <span class="logo-mark">🥪</span>
+        <span class="logo-text">Doña Ana</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#visitanos">Visítanos</a>
+      </nav>
+
+      <a href="#pedir" class="btn btn-primary btn-sm nav-cta">Pedir ahora</a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="nav-mobile" aria-label="Navegación móvil" hidden>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visitanos">Visítanos</a>
+      <a href="#pedir" class="btn btn-primary">Pedir ahora</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO CON BANNER ============ -->
+    <section class="hero hero-banner-mode" id="inicio">
+      <!-- Banner a ancho completo -->
+      <div class="hero-banner">
+        <img src="assets/img/hero.webp"
+             alt="Puesto de comida Doña Ana en Vista Alegre, Santiago de Cuba"
+             width="1600" height="600" fetchpriority="high" decoding="async" />
+      </div>
+
+      <!-- Contenido debajo del banner (sin repetir lo que ya dice la imagen) -->
+      <div class="container hero-banner-content">
+        <span class="eyebrow">Calle 23 · Vista Alegre · Santiago de Cuba</span>
+        <h1>Comida criolla y sándwiches <em>recién hechos</em>.</h1>
+        <p class="hero-sub">
+          Sándwiches, platos criollos, café, refrescos y jugos naturales.
+          Todo listo para llevar o comer aquí mismo, a cualquier hora del día.
+        </p>
+        <div class="hero-actions">
+          <a href="#pedir" class="btn btn-primary">Pedir por WhatsApp</a>
+          <a href="#productos" class="btn btn-ghost">Ver productos →</a>
+        </div>
+        <ul class="hero-trust" aria-label="Características destacadas">
+          <li>✓ 3 años sirviendo</li>
+          <li>✓ Precios accesibles</li>
+          <li>✓ Comida casera</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FRANJA DE INFO RÁPIDA ============ -->
+    <section class="quick-info" aria-label="Información rápida">
+      <div class="container quick-grid">
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">🕐</span>
+          <div>
+            <strong>24 horas</strong>
+            <span>Dos turnos de trabajo</span>
+          </div>
+        </div>
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">📍</span>
+          <div>
+            <strong>Vista Alegre</strong>
+            <span>Calle 23, Santiago de Cuba</span>
+          </div>
+        </div>
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">📞</span>
+          <div>
+            <strong>+53 5855 7125</strong>
+            <span>Pedidos por WhatsApp</span>
+          </div>
+        </div>
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">💰</span>
+          <div>
+            <strong>Precios populares</strong>
+            <span>Comida casera criolla</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCTOS ============ -->
+    <section class="section" id="productos" aria-labelledby="productos-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Productos</span>
+          <h2 id="productos-title">Lo que ofrecemos todos los días</h2>
+          <p class="lead">
+            Comida criolla, sándwiches hechos al momento, café recién colado y jugos naturales.
+            Todo listo para llevar o comer aquí mismo.
+          </p>
+        </header>
+
+        <div class="filters reveal" role="tablist" aria-label="Filtrar productos">
+          <button class="filter is-active" role="tab" aria-selected="true" data-filter="all">Todo</button>
+          <button class="filter" role="tab" aria-selected="false" data-filter="sandwiches">Sándwiches</button>
+          <button class="filter" role="tab" aria-selected="false" data-filter="criolla">Comida criolla</button>
+          <button class="filter" role="tab" aria-selected="false" data-filter="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+
+          <article class="card menu-card reveal" data-cat="sandwiches">
+            <div class="card-img">
+              <img src="assets/img/sandwich-cubano.jpg"
+                   alt="Sándwich cubano de jamón y queso"
+                   loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>Sándwich cubano</h3>
+              <p>Pan suave, jamón, queso, lechuga y tomate. El clásico que nunca falla.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card reveal" data-cat="sandwiches">
+            <div class="card-img">
+              <img src="assets/img/sandwich-mixto.jpg"
+                   alt="Sándwich mixto de jamón y queso"
+                   loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>Sándwich mixto</h3>
+              <p>Jamón y queso fundido en pan tostado. Rápido, caliente, sabroso.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card reveal" data-cat="criolla">
+            <div class="card-img">
+              <img src="assets/img/comida-criolla.jpg"
+                   alt="Plato de comida criolla cubana con arroz congris, ensalada y vianda"
+                   loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>Comida criolla del día</h3>
+              <p>Arroz congris, ensalada y la vianda del día. Cocina casera, como en casa.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card reveal" data-cat="bebidas">
+            <div class="card-img">
+              <img src="assets/img/cafe.jpg"
+                   alt="Café cubano recién colado"
+                   loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>Café cubano</h3>
+              <p>Fuerte, dulce y recién colado. A cualquier hora del día o la noche.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card reveal" data-cat="bebidas">
+            <div class="card-img">
+              <img src="assets/img/jugo-natural.jpg"
+                   alt="Jugo natural de frutas tropicales"
+                   loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>Jugos naturales</h3>
+              <p>Fruta de temporada, recién licuada. Mango, guayaba, naranja y más.</p>
+              <span class="tag tag-fresh">Natural</span>
+            </div>
+          </article>
+
+          <article class="card menu-card reveal" data-cat="bebidas">
+            <div class="card-img">
+              <img src="assets/img/refrescos.jpg"
+                   alt="Refrescos enlatados fríos"
+                   loading="lazy" width="400" height="300" />
+            </div>
+            <div class="card-body">
+              <h3>Refrescos enlatados</h3>
+              <p>Bien fríos, siempre disponibles. Varias marcas y sabores.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu-note reveal">
+          ¿No ves lo que buscas? <a href="#pedir">Pregúntanos por WhatsApp</a> — tenemos más ofertas cada día.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section section-alt" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <img src="assets/img/nosotros.webp"
+               alt="Puesto de comida Doña Ana en Vista Alegre, Santiago de Cuba"
+               loading="lazy" width="560" height="640" />
+        </div>
+        <div class="about-content reveal">
+          <span class="eyebrow">Nosotros</span>
+          <h2 id="nosotros-title">Tres años sirviendo a Vista Alegre, día y noche.</h2>
+          <p>
+            Doña Ana es un puesto de comida criolla en la Calle 23, esquina Carretera del Caney
+            y Calle 4ta de Vista Alegre. Empezamos hace unos tres años con la idea sencilla de
+            dar comida rica a cualquier hora, y aquí seguimos.
+          </p>
+          <p>
+            Trabajamos las 24 horas con dos turnos, para que nunca te quedes sin comer algo
+            caliente, sin importar la hora a la que pases.
+          </p>
+
+          <ul class="values">
+            <li>
+              <span class="value-icon" aria-hidden="true">⏰</span>
+              <div>
+                <strong>Abierto 24 horas</strong>
+                <p>Dos turnos de trabajo para servirte de día y de noche.</p>
+              </div>
+            </li>
+            <li>
+              <span class="value-icon" aria-hidden="true">🍲</span>
+              <div>
+                <strong>Cocina criolla casera</strong>
+                <p>Recetas cubanas de siempre, preparadas al momento.</p>
+              </div>
+            </li>
+            <li>
+              <span class="value-icon" aria-hidden="true">🤝</span>
+              <div>
+                <strong>Cerca de ti</strong>
+                <p>En el corazón de Vista Alegre, fácil de llegar.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2 id="servicios-title">Cómo te atendemos</h2>
+          <p class="lead">Elige la forma más cómoda para ti. Estamos disponibles a cualquier hora.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">🛍️</span>
+            <h3>Para llevar</h3>
+            <p>Pide por WhatsApp y recoge tu pedido listo, sin esperar. Perfecto si vas con prisa.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">🍽️</span>
+            <h3>Consumo en el puesto</h3>
+            <p>Comedero pequeño y acogedor. Siéntate a comer algo rápido o un café tranquilo.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">🌙</span>
+            <h3>Servicio nocturno</h3>
+            <p>¿Se te hizo tarde? Estamos abiertos. Café, sándwiches y comida caliente a cualquier hora.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon" aria-hidden="true">👥</span>
+            <h3>Pedidos para grupos</h3>
+            <p>¿Reunión, cumpleaños o pedido grande? Avísanos por WhatsApp y lo preparamos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <header class="section-head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 id="faq-title">Antes de venir</h2>
+        </header>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>¿Realmente están abiertos 24 horas?</summary>
+            <p>Sí. Trabajamos con dos turnos de trabajo que cubren las 24 horas del día, los 7 días de la semana.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Puedo pedir por WhatsApp?</summary>
+            <p>Sí. Escríbenos a cualquiera de nuestros dos números y te confirmamos disponibilidad y precio. Recoges tu pedido en el puesto cuando esté listo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué formas de pago aceptan?</summary>
+            <p>[AGREGAR FORMAS DE PAGO — efectivo, transferencia, etc.]</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Hacen entregas a domicilio?</summary>
+            <p>[CONFIRMAR SI HAY DELIVERY — si no, indicar que solo es en el puesto o para recoger]</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Tienen opciones vegetarianas?</summary>
+            <p>Sí. Tenemos jugos naturales, café, refrescos y varios platos criollos que puedes adaptar. Pregúntanos por WhatsApp según el día.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Cómo llego al puesto?</summary>
+            <p>Estamos en Calle 23, entre Carretera del Caney y Calle 4ta, en Vista Alegre, Santiago de Cuba. Puedes abrir la ubicación en Google Maps desde el botón de abajo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISÍTANOS / PEDIR ============ -->
+    <section class="section section-dark" id="visitanos" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-info reveal">
+          <span class="eyebrow eyebrow-light">Visítanos</span>
+          <h2 id="visit-title">Estamos en Vista Alegre</h2>
+
+          <ul class="info-list">
+            <li>
+              <strong>Dirección</strong>
+              <span>Calle 23 % Carretera del Caney y Calle 4ta<br />Vista Alegre, Santiago de Cuba</span>
+            </li>
+            <li>
+              <strong>Horario</strong>
+              <span>Abierto 24 horas · 7 días a la semana<br />Dos turnos de trabajo</span>
+            </li>
+            <li>
+              <strong>Teléfonos / WhatsApp</strong>
+              <a href="tel:+5358557125">+53 5855 7125</a>
+              <a href="tel:+5358148344">+53 5814 8344</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:donana26@gmail.com">donana26@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- FORMULARIO PEDIDO → WhatsApp -->
+        <div class="visit-form reveal" id="pedir">
+          <h3>Haz tu pedido</h3>
+          <p class="form-sub">Rellena el formulario y se abrirá WhatsApp con tu pedido listo para enviar.</p>
+
+          <form id="reserva-form" novalidate>
+            <div class="field">
+              <label for="nombre">Tu nombre</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Nombre y apellido" />
+              <small class="error" data-error-for="nombre"></small>
+            </div>
+
+            <div class="field">
+              <label for="producto">¿Qué quieres pedir?</label>
+              <select id="producto" name="producto" required>
+                <option value="">— Selecciona —</option>
+                <option>Sándwich cubano</option>
+                <option>Sándwich mixto</option>
+                <option>Comida criolla del día</option>
+                <option>Café cubano</option>
+                <option>Jugo natural</option>
+                <option>Refrescos enlatados</option>
+                <option>Varias cosas (lo especifico abajo)</option>
+              </select>
+              <small class="error" data-error-for="producto"></small>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1" required />
+                <small class="error" data-error-for="cantidad"></small>
+              </div>
+              <div class="field">
+                <label for="telefono">Tu WhatsApp</label>
+                <input type="tel" id="telefono" name="telefono" required autocomplete="tel" placeholder="+53 ..." />
+                <small class="error" data-error-for="telefono"></small>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="notas">Notas (hora de recogida, detalles...)</label>
+              <textarea id="notas" name="notas" rows="3" placeholder="Opcional"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar pedido por WhatsApp
+            </button>
+            <p class="form-legal">Al enviar, se abrirá WhatsApp con tu pedido listo. No guardamos tus datos en este sitio.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark">🥪</span>
+          <span class="logo-text">Doña Ana</span>
+        </div>
+        <p>Puesto de comida criolla, sándwiches, café y jugos naturales en Vista Alegre, Santiago de Cuba. Abierto 24 horas.</p>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://wa.me/5358557125" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="[RED SOCIAL]" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces del sitio">
+        <h4>Navegación</h4>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#visitanos">Visítanos</a>
+      </nav>
+
+      <div class="footer-nav">
+        <h4>Contacto</h4>
+        <a href="tel:+5358557125">+53 5855 7125</a>
+        <a href="tel:+5358148344">+53 5814 8344</a>
+        <a href="mailto:donana26@gmail.com">donana26@gmail.com</a>
+        <span>Calle 23, Vista Alegre</span>
+        <span>Santiago de Cuba</span>
+      </div>
+
+      <div class="footer-legal">
+        <h4>Legal</h4>
+        <a href="privacidad.html">Política de privacidad</a>
+        <a href="terminos.html">Términos y condiciones</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Doña Ana · Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5358557125?text=Hola%20Do%C3%B1a%20Ana%2C%20quiero%20hacer%20un%20pedido"
+     class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+      <path d="M20.5 3.5A11 11 0 0 0 3.2 17.6L2 22l4.5-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 18a9 9 0 0 1-4.6-1.3l-.3-.2-2.7.7.7-2.6-.2-.3A9 9 0 1 1 12 21.5Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.1c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5s-.7-1.6-.9-2.2-.4-.5-.6-.5h-.5a1 1 0 0 0-.8.4A2.9 2.9 0 0 0 6 10c0 1.7 1.2 3.3 1.4 3.5s2.4 3.7 5.9 5c3.5 1.3 3.5.9 4.1.8s2-.8 2.3-1.6a2.9 2.9 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4Z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
